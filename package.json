@@ -2,10 +2,10 @@
   "name": "endurance-manager",
   "version": "0.1.0",
   "description": "A simple way to manage your endurance team",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "start": "node backend/server.js",
-    "server": "nodemon backend/server.js",
+    "start": "node backend/server.mjs",
+    "server": "nodemon backend/server.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Timothy Fiss",
