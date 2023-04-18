@@ -1,0 +1,2 @@
+ERD
+https://drawsql.app/teams/cs476-group/diagrams/endurance-manager
