@@ -1,11 +1,23 @@
 import pg from "pg";
 const { Pool } = pg;
 
+
 const connectionString = process.env.DATABASE_URL;
 export const cockroachPool = new Pool({
   connectionString,
-  application_name: "$ ",
+  application_name: "$ Shift Driver",
 });
+
+console.log("Connecting to DB")
+try{
+  const client = await cockroachPool.connect();
+}
+catch (e){
+  console.log("Connection Failed")
+  console.error(e.stack)
+  process.exit()
+}
+
 
 // Wrapper for a transaction.  This automatically re-calls the operation with
 // the client as an argument as long as the database server asks for
